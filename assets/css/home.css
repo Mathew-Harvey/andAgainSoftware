@@ -181,7 +181,7 @@ body{margin:0}
 .ag .bw-l .pan-m>img{object-position:50% 34%}
 .ag .ths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-right:6px}
 .ag .ths.n4{grid-template-columns:repeat(4,minmax(0,1fr))}
-.ag .th img{width:100%;aspect-ratio:16/10;object-fit:cover;border:3px solid var(--ink);background:#fff}
+.ag .th img,.ag .th video{width:100%;aspect-ratio:16/10;object-fit:cover;border:3px solid var(--ink);background:#fff}
 .ag .th.lb img{object-fit:contain;background:var(--ink)}
 .ag .th.fit img{object-fit:contain;padding:6px 8px}
 .ag .th.job img{object-position:50% 100%}
@@ -435,7 +435,7 @@ body{margin:0}
   .ag .lgo.raw img{height:26px}
   .ag .ths.lst{grid-template-columns:minmax(0,1fr);gap:10px}
   .ag .ths.lst .th{display:grid;grid-template-columns:116px minmax(0,1fr);gap:12px;align-items:center}
-  .ag .ths.lst .th img{border-width:2px}
+  .ag .ths.lst .th img,.ag .ths.lst .th video{border-width:2px}
   .ag .ths.lst .th figcaption{margin:0;font-size:16px}
   .ag .ths.n4{gap:8px}
   .ag .ths.n4 img{border-width:2px}
