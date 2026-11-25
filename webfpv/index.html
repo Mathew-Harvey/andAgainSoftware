@@ -23,10 +23,14 @@
 <body>
 <a class="skip" href="#main">Skip to the content</a>
 <div class="wf" id="top" data-site>
+<!-- Steam's logo, once, for the Steam buttons below to use. Shown in one colour and never restyled. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="steam-mark" viewBox="0 0 24 24"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></symbol>
+</svg>
 
 <div class="ts">
   <div class="w ts-in">
-    <span class="lab ts-l">Published by <span class="nc">andAgainSoftware</span></span>
+    <a class="lab ts-l" href="../">Published by <span class="nc">andAgainSoftware</span></a>
     <span class="lab ts-mid"><span>Free in a browser now.</span> <span class="ts-x" data-t="stripSteam">On Steam 27 November.</span></span>
     <button type="button" class="mo lab" data-act="motion">
       <span class="sw" data-when="playing">
@@ -43,7 +47,6 @@
 
 <div class="bar">
   <div class="w bar-in">
-    <a class="mark" href="../" aria-label="andAgainSoftware, home"><b>and<i>Again</i></b><span>Software</span></a>
     <a class="bar-wf" href="#top" aria-label="WebFPV, top of page"><img src="../assets/media/wf-logo.png" alt=""></a>
     <nav class="bar-l lab" aria-label="On this page">
       <a href="#trailer">Trailer</a>
@@ -53,7 +56,8 @@
       <a href="#patch-notes">Patch notes</a>
       <a href="#editions">Editions</a>
     </nav>
-    <a class="btn sm" href="https://store.steampowered.com/app/4944190/webFPV/" target="_blank" rel="noopener"><span class="lg" data-t="steamLabel">Wishlist on Steam</span><span class="ph" data-t="steamShort">Wishlist</span></a>
+    <a class="btn sm wh bar-play" href="https://webfpv.org/sim/?map=field"><svg class="pi" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3l15 9-15 9z" fill="currentColor"></path></svg><span>Play now</span></a>
+    <a class="btn sm bar-st" href="https://store.steampowered.com/app/4944190/webFPV/?utm_source=andagain&amp;utm_campaign=nav" target="_blank" rel="noopener"><svg class="si" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#steam-mark"></use></svg><span class="lg" data-t="steamLabel">Wishlist on Steam</span><span class="ph" data-t="steamShort">Wishlist</span></a>
   </div>
 </div>
 
@@ -61,14 +65,24 @@
   <img class="hero-v" src="../assets/media/wf-s17-hd.jpg" alt="">
   <div class="hero-sh" aria-hidden="true"></div>
   <div class="w hero-in">
+    <aside class="hp" aria-label="Official partners">
+      <span class="lab">Official partners</span>
+      <div class="hp-r">
+        <a href="https://webfpv.org/board/partners#gds" data-dest="partners-gds" data-partner="gds" data-place="landing_hero"><img src="../assets/media/partners/gds.svg" width="208" height="72" alt="Global Drone Solutions, official training partner" decoding="async"></a>
+        <a href="https://webfpv.org/board/partners#mantisfpv" data-dest="partners-mantisfpv" data-partner="mantisfpv" data-place="landing_hero"><img class="wide" src="../assets/media/partners/mantisfpv.svg" width="567" height="100" alt="Mantis FPV, official retail partner" decoding="async"></a>
+        <a href="https://webfpv.org/board/partners#wcmrc" data-dest="partners-wcmrc" data-partner="wcmrc" data-place="landing_hero"><img src="../assets/media/partners/wcmrc.png" width="708" height="252" alt="West Coast Multirotor Club, official club partner" decoding="async"></a>
+        <a href="https://webleedfpv.com/?utm_source=webfpv&amp;utm_medium=partner&amp;utm_content=landing_hero" target="_blank" rel="noopener" data-partner="webleedfpv" data-place="landing_hero"><img class="wide" src="../assets/media/partners/webleedfpv.png" width="1200" height="190" alt="weBLEEDfpv, official USA micro drone partner" decoding="async"></a>
+        <a href="https://konexdrone.com/?utm_source=webfpv&amp;utm_medium=partner" target="_blank" rel="noopener"><img src="../assets/media/partners/konexdrone.png" width="640" height="226" alt="KoneX Drone, official Spanish partner" decoding="async"></a>
+      </div>
+    </aside>
     <div class="hero-t">
       <div class="chips"><span class="chip y">A first person view drone simulator, drawn like a manga</span></div>
       <img class="hero-logo" src="../assets/media/wf-logo.png" alt="WebFPV">
       <h1><span class="pl">Learn to fly FPV</span> <span class="pl y">on real firmware.</span></h1>
       <p class="hero-p">FPV means you fly from the drone's own camera. 73&nbsp;lessons take you from a first hover to a five lap championship. Then come 16 race tracks, a town to fly tricks in, a track builder and six mini games.</p>
-      <div class="btns">
-        <a class="btn" href="https://store.steampowered.com/app/4944190/webFPV/" target="_blank" rel="noopener" data-t="steamLabel">Wishlist on Steam</a>
-        <a class="btn wh" href="https://webfpv.org/" target="_blank" rel="noopener">Play free in your browser</a>
+      <div class="hbt">
+        <a class="btn xl wh" href="https://webfpv.org/sim/?map=field"><svg class="pi" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3l15 9-15 9z" fill="currentColor"></path></svg><span class="b2"><b>Play now</b><small>Free, in your browser</small></span></a>
+        <a class="btn xl" href="https://store.steampowered.com/app/4944190/webFPV/?utm_source=andagain&amp;utm_campaign=hero" target="_blank" rel="noopener"><svg class="si" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#steam-mark"></use></svg><span class="b2"><b data-t="steamLabel">Wishlist on Steam</b><small data-t="steamSub">USD&nbsp;9.99, out 27&nbsp;November</small></span></a>
       </div>
     </div>
           <aside data-when="before" class="cdc" aria-label="WebFPV is on Steam on 27 November for USD 9.99">
@@ -189,8 +203,8 @@
     <div class="cta">
       <p><span data-t="ctaWhen">On Steam 27&nbsp;November.</span> <em>USD&nbsp;9.99.</em></p>
       <div class="btns">
-        <a class="btn" href="https://store.steampowered.com/app/4944190/webFPV/" target="_blank" rel="noopener" data-t="steamLabel">Wishlist on Steam</a>
-        <a class="btn wh" href="https://webfpv.org/" target="_blank" rel="noopener">Play free in your browser</a>
+        <a class="btn wh" href="https://webfpv.org/sim/?map=field"><svg class="pi" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3l15 9-15 9z" fill="currentColor"></path></svg>Play now, free</a>
+        <a class="btn" href="https://store.steampowered.com/app/4944190/webFPV/?utm_source=andagain&amp;utm_campaign=firmware" target="_blank" rel="noopener" data-t="steamLabel">Wishlist on Steam</a>
       </div>
     </div>
   </div>
@@ -271,7 +285,7 @@
               <div><dt class="lab">Saves</dt><dd>Only in the browser you play in</dd></div>
               <div><dt class="lab">Online</dt><dd>Host a room or join one, and race community ghost laps</dd></div>
             </dl>
-            <a class="btn wh" href="https://webfpv.org/" target="_blank" rel="noopener">Play free in your browser</a>
+            <a class="btn wh" href="https://webfpv.org/sim/?map=field"><svg class="pi" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3l15 9-15 9z" fill="currentColor"></path></svg>Play now, free</a>
           </div>
         </div></div>
       </article>
@@ -289,7 +303,7 @@
               <div><dt class="lab">Saves</dt><dd>To Steam Cloud, so progress and maps follow you</dd></div>
               <div><dt class="lab">Online</dt><dd>Rooms, LAN race nights and Steam leaderboards</dd></div>
             </dl>
-            <a class="btn bk" href="https://store.steampowered.com/app/4944190/webFPV/" target="_blank" rel="noopener" data-t="steamLabel">Wishlist on Steam</a>
+            <a class="btn bk" href="https://store.steampowered.com/app/4944190/webFPV/?utm_source=andagain&amp;utm_campaign=editions" target="_blank" rel="noopener"><svg class="si" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#steam-mark"></use></svg><span data-t="steamLabel">Wishlist on Steam</span></a>
           </div>
         </div></div>
       </article>
@@ -355,9 +369,26 @@
     
     <p class="end-p">Start free in your browser. Buy it on Steam for lower latency, leaderboards and LAN race nights.</p>
     <div class="btns">
-      <a class="btn" href="https://store.steampowered.com/app/4944190/webFPV/" target="_blank" rel="noopener" data-t="steamLabel">Wishlist on Steam</a>
-      <a class="btn wh" href="https://webfpv.org/" target="_blank" rel="noopener">Play free in your browser</a>
+      <a class="btn xl" href="https://store.steampowered.com/app/4944190/webFPV/?utm_source=andagain&amp;utm_campaign=close" target="_blank" rel="noopener"><svg class="si" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="#steam-mark"></use></svg><span data-t="steamLabel">Wishlist on Steam</span></a>
+      <a class="btn xl wh" href="https://webfpv.org/sim/?map=field"><svg class="pi" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3l15 9-15 9z" fill="currentColor"></path></svg>Play now, free</a>
     </div>
+  </div>
+</section>
+<section class="pt" id="partners" aria-label="Partners and supporters">
+  <div class="w">
+    <h2 class="lab" id="h-pt">Official partners</h2>
+    <ul class="pt-r" aria-labelledby="h-pt">
+      <li><a href="https://webfpv.org/board/partners#gds" data-dest="partners-gds" data-partner="gds" data-place="landing_row"><small>Training partner</small><img src="../assets/media/partners/gds.svg" width="208" height="72" alt="Global Drone Solutions" loading="lazy" decoding="async"></a></li>
+      <li><a href="https://webfpv.org/board/partners#mantisfpv" data-dest="partners-mantisfpv" data-partner="mantisfpv" data-place="landing_row"><small>Retail partner</small><img class="wide" src="../assets/media/partners/mantisfpv.svg" width="567" height="100" alt="Mantis FPV" loading="lazy" decoding="async"></a></li>
+      <li><a href="https://webfpv.org/board/partners#wcmrc" data-dest="partners-wcmrc" data-partner="wcmrc" data-place="landing_row"><small>Club partner</small><img src="../assets/media/partners/wcmrc.png" width="708" height="252" alt="West Coast Multirotor Club" loading="lazy" decoding="async"></a></li>
+      <li><a href="https://webleedfpv.com/?utm_source=webfpv&amp;utm_medium=partner&amp;utm_content=landing_row" target="_blank" rel="noopener" data-partner="webleedfpv" data-place="landing_row"><small>USA micro drone partner</small><img class="wide" src="../assets/media/partners/webleedfpv.png" width="1200" height="190" alt="weBLEEDfpv" loading="lazy" decoding="async"></a></li>
+      <li><a href="https://konexdrone.com" target="_blank" rel="noopener"><small>Spanish partner</small><img src="../assets/media/partners/konexdrone.png" width="640" height="226" alt="KoneX Drone" loading="lazy" decoding="async"></a></li>
+    </ul>
+    <h2 class="lab" id="h-sp">Supporters</h2>
+    <ul class="pt-r sup" aria-labelledby="h-sp">
+      <li><a href="https://www.yourfpv.co.uk/?utm_source=webfpv&amp;utm_medium=landing" target="_blank" rel="noopener noreferrer"><small>UK FPV shop</small><img src="../assets/media/partners/yourfpv.png" width="869" height="570" alt="YourFPV" loading="lazy" decoding="async"></a></li>
+      <li><a href="https://369drone.jp/?utm_source=webfpv&amp;utm_medium=landing" target="_blank" rel="noopener noreferrer"><small>Japanese FPV brand</small><img src="../assets/media/partners/369drone.png" width="428" height="242" alt="369DRONE" loading="lazy" decoding="async"></a></li>
+    </ul>
   </div>
 </section>
 </main>
@@ -372,8 +403,8 @@
       <div>
         <h3>Play</h3>
         <ul>
-          <li><a href="https://webfpv.org/" target="_blank" rel="noopener">Play free in your browser</a></li>
-          <li><a href="https://store.steampowered.com/app/4944190/webFPV/" target="_blank" rel="noopener" data-t="steamLabel">Wishlist on Steam</a></li>
+          <li><a href="https://webfpv.org/sim/?map=field">Play now, free</a></li>
+          <li><a href="https://store.steampowered.com/app/4944190/webFPV/?utm_source=andagain&amp;utm_campaign=footer" target="_blank" rel="noopener" data-t="steamLabel">Wishlist on Steam</a></li>
         </ul>
       </div>
       <div>

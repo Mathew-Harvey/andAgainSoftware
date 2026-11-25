@@ -636,6 +636,65 @@ body{margin:0}
   .wf .hero-v{object-position:100% 60%}
 }
 
+/* Partners, Play now and the Steam call. Added 25 November 2026. */
+.wf a.ts-l{display:inline-flex;align-items:center;gap:.34em;min-height:44px;text-decoration:none;justify-self:start}
+.wf a.ts-l:hover .nc{text-decoration:underline;text-underline-offset:3px}
+.wf .btn .pi{width:.76em;height:.76em;flex:none;margin-top:-2px}
+.wf .btn .si{width:1.08em;height:1.08em;flex:none;margin-top:-3px}
+.wf .bar-in{gap:8px 16px}
+.wf .hbt{display:flex;flex-wrap:wrap;gap:16px 22px;margin-top:6px}
+.wf .btn.xl{min-height:82px;padding:8px 28px 5px 22px;gap:16px;font-size:31px;text-align:left;justify-content:flex-start;box-shadow:7px 7px 0 var(--pink)}
+.wf .btn.xl:hover{box-shadow:10px 10px 0 var(--pink)}
+.wf .btn.xl .pi{width:30px;height:30px;margin-top:-4px}
+.wf .btn.xl .si{width:40px;height:40px;margin-top:-4px}
+.wf .btn.xl .b2{display:flex;flex-direction:column;gap:6px}
+.wf .btn.xl .b2 b{font-weight:400}
+.wf .btn.xl .b2 small{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:16px;letter-spacing:.09em;line-height:1}
+.wf .hp{position:absolute;top:24px;right:var(--pad);z-index:3;display:flex;align-items:center;gap:4px 20px;background:var(--ink);border:3px solid var(--white);padding:6px 20px 6px 16px;box-shadow:6px 6px 0 var(--pink);transform:rotate(.5deg)}
+.wf .hp>.lab{font-size:13px;letter-spacing:.14em;line-height:1.2;color:var(--yel);width:min-content}
+.wf .hp-r{display:flex;align-items:center;gap:0 24px}
+.wf .hp-r a{display:inline-flex;align-items:center;min-height:44px;opacity:.92;transition:opacity .15s ease}
+.wf .hp-r a:hover{opacity:1}
+.wf .hp-r img{height:32px;width:auto;max-width:none}
+.wf .hp-r img.wide{height:18px}
+.wf .pt{background:var(--ink);border-top:6px solid var(--white);padding:58px 0 8px}
+.wf .pt h2{color:var(--yel);font-size:15px;letter-spacing:.14em;margin-bottom:16px}
+.wf .pt-r{display:flex;flex-wrap:wrap;align-items:flex-end;gap:24px 48px;margin-bottom:40px}
+.wf .pt-r a{display:flex;flex-direction:column;gap:9px;text-decoration:none;opacity:.9;transition:opacity .15s ease}
+.wf .pt-r a:hover{opacity:1}
+.wf .pt-r small{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:13px;letter-spacing:.14em;line-height:1.2;text-transform:uppercase;color:var(--mut)}
+.wf .pt-r img{height:44px;width:auto}
+.wf .pt-r img.wide{height:25px;margin:9px 0 10px}
+.wf .pt-r.sup img{height:54px}
+@container (min-width:1181px) and (max-width:1320px){
+  .wf .hp{left:var(--pad);right:auto}
+  .wf .hero-in{padding-top:118px}
+}
+@container (max-width:1180px){
+  .wf .hp{left:var(--pad);right:auto;top:20px}
+}
+@container (max-width:700px){
+  .wf .bar .btn.sm{padding:2px 10px 0;gap:7px}
+  .wf .bar-st .si{display:none}
+  .wf a.ts-l{display:none}
+  .wf .hp{position:static;order:3;width:100%;margin-top:8px;transform:none;flex-direction:column;align-items:flex-start;gap:2px;padding:10px 14px 6px;box-shadow:5px 5px 0 var(--pink)}
+  .wf .hp>.lab{width:auto;font-size:13px}
+  .wf .hp-r{flex-wrap:wrap;gap:0 22px}
+  .wf .hp-r a{min-height:44px}
+  .wf .hp-r img{height:28px}
+  .wf .hp-r img.wide{height:15px}
+  .wf .hbt{width:100%;gap:12px;order:1;margin-top:5px}
+  .wf .btn.xl{min-height:70px;font-size:27px;padding:7px 18px 4px 16px;gap:14px;box-shadow:5px 5px 0 var(--pink)}
+  .wf .btn.xl .pi{width:26px;height:26px}
+  .wf .btn.xl .si{width:34px;height:34px}
+  .wf .btn.xl .b2 small{font-size:15px}
+  .wf .pt{padding:40px 0 4px}
+  .wf .pt-r{gap:22px 30px;margin-bottom:32px}
+  .wf .pt-r img{height:36px}
+  .wf .pt-r img.wide{height:20px;margin:8px 0}
+  .wf .pt-r.sup img{height:46px}
+}
+
 /* Site additions (not in the mock-up boards) */
 html{background:#111318;scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

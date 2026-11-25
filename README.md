@@ -99,6 +99,8 @@ New clips should be H.264 MP4 with a poster picture, and written like the existi
 - Typefaces: Anton, Barlow and Barlow Condensed, under the SIL Open Font License 1.1 (`assets/fonts/OFL.txt`).
 - Pictures and footage come from each project and stay with their owners: West Coast Multirotor Club and Extreme
   Limit Films for theirs, Mat Harvey for the rest.
-- Steam is a trademark of Valve Corporation.
+- The partner and supporter marks on the WebFPV page (`assets/media/partners/`) belong to those companies and are
+  shown the way webfpv.org shows them: one colour, with a link to each.
+- Steam and the Steam logo are trademarks of Valve Corporation.
 
 This repository has no licence file. The fonts keep their own licence.

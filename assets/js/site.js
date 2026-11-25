@@ -25,6 +25,7 @@
   var TEXT = {
     steamLabel: ['Wishlist on Steam', 'Buy on Steam'],
     steamShort: ['Wishlist', 'Buy'],
+    steamSub: ['USD\u00a09.99, out 27\u00a0November', 'USD\u00a09.99, out now'],
     stripSteam: ['On Steam 27 November.', 'On Steam for USD 9.99.'],
     edStep: ['27 November', 'Out now'],
     ctaWhen: ['On Steam 27 November.', 'Out now on Steam.'],
