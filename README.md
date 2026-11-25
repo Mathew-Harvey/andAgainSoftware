@@ -6,7 +6,7 @@ Live at https://mathew-harvey.github.io/andAgainSoftware/
 
 | Page | File | What it is |
 | --- | --- | --- |
-| Home | `index.html` | The publisher page. All seven projects, laid out like the first issue of a comic. |
+| Home | `index.html` | The publisher page. All eight projects, laid out like the first issue of a comic. |
 | WebFPV | `webfpv/index.html` | The launch page for WebFPV: free in a browser, and on Steam from 27 November 2026 for USD 9.99. |
 | Not found | `404.html` | Shown by GitHub Pages for any address that has no page. |
 
@@ -77,6 +77,11 @@ They say "on Steam on 27 November", so update them after launch.
 The short clips are silent loops. They play only while they are on screen, and the "Pause motion" button in the top
 bar stops all of them and remembers the choice. Motion starts paused for anyone whose system asks for reduced motion
 or reduced data. The WebFPV trailer loads nothing until someone presses play, then plays with sound and controls.
+
+The colouring page in the WebColoring block is not a video. It is the page's line art (`wcl-line.png`) with one
+picture for each colour (`wcl-c01.png` to `wcl-c12.png`) multiplied onto it, and `home.css` fades them in one after
+another. The colours are the ones webcoloring.org gives that page for colour by numbers. With motion paused it holds
+still with the first five colours on.
 
 New clips should be H.264 MP4 with a poster picture, and written like the existing ones:
 
