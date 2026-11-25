@@ -640,7 +640,8 @@ body{margin:0}
 .wf a.ts-l{display:inline-flex;align-items:center;gap:.34em;min-height:44px;text-decoration:none;justify-self:start}
 .wf a.ts-l:hover .nc{text-decoration:underline;text-underline-offset:3px}
 .wf .btn .pi{width:.76em;height:.76em;flex:none;margin-top:-2px}
-.wf .btn .si{width:1.08em;height:1.08em;flex:none;margin-top:-3px}
+.wf .btn .si{width:1.08em;height:1.08em;flex:none;margin-top:-3px;color:#000}
+.wf .on-light .btn.bk .si{color:#fff}
 .wf .bar-in{gap:8px 16px}
 .wf .hbt{display:flex;flex-wrap:wrap;gap:16px 22px;margin-top:6px}
 .wf .btn.xl{min-height:82px;padding:8px 28px 5px 22px;gap:16px;font-size:31px;text-align:left;justify-content:flex-start;box-shadow:7px 7px 0 var(--pink)}
