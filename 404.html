@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<script>
+/* GitHub Pages serves this page for any missing address, at any depth, so relative links
+   need a fixed starting point. On github.io the site lives in its first folder; on a
+   domain of its own it lives at the root. The icon and the fonts are added here too, after
+   the starting point is set, so the browser never asks for them at the wrong address. */
+(function () {
+  function add(tag, attrs) {
+    var el = document.createElement(tag);
+    for (var k in attrs) el.setAttribute(k, attrs[k]);
+    document.head.appendChild(el);
+  }
+  add('base', { href: /\.github\.io$/.test(location.hostname) ? '/' + location.pathname.split('/')[1] + '/' : '/' });
+  add('link', { rel: 'icon', type: 'image/png', href: 'favicon.png' });
+  add('link', { rel: 'stylesheet', href: 'assets/css/fonts.css' });
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found: andAgainSoftware</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#111318">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:#111318}
+body{min-height:100vh;display:grid;place-items:center;padding:40px 22px;color:#fffdf5;font:500 20px/1.5 'Barlow',system-ui,sans-serif;
+  background:#111318 radial-gradient(rgba(255,253,245,.07) 1.2px,transparent 1.4px) 0 0/9px 9px}
+main{width:100%;max-width:760px}
+.mark{display:inline-flex;align-items:center;gap:9px;color:#fffdf5;text-decoration:none}
+.mark b{font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:34px;line-height:1;display:inline-flex;align-items:center}
+.mark b i{font-style:normal;background:#ffc21a;color:#111318;padding:.1em .13em .02em;margin-left:.06em;transform:rotate(-2deg)}
+.mark span{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:.26em;text-transform:uppercase;padding-top:9px;margin-left:4px}
+h1{margin-top:44px;font-family:'Anton',Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:clamp(54px,13vw,128px);line-height:.94}
+h1 em{font-style:normal;display:inline-block;background:#ffc21a;color:#111318;padding:.06em .14em 0;margin:10px 0 0 -6px;transform:rotate(-2deg);box-shadow:7px 7px 0 #f09ab3}
+p{margin-top:34px;max-width:30em}
+.btns{margin-top:30px;display:flex;flex-wrap:wrap;gap:18px}
+.btn{display:inline-flex;align-items:center;min-height:56px;padding:6px 26px 2px;background:#ffc21a;color:#111318;border:4px solid #111318;box-shadow:6px 6px 0 #f09ab3;
+  font-family:'Anton',Impact,sans-serif;font-size:22px;letter-spacing:.02em;text-transform:uppercase;text-decoration:none}
+.btn.wh{background:#fffdf5}
+.btn:hover,.btn:focus-visible{transform:translate(2px,2px);box-shadow:4px 4px 0 #f09ab3}
+a:focus-visible{outline:3px solid #fffdf5;outline-offset:3px}
+</style>
+</head>
+<body>
+<main>
+  <a class="mark" href="./" aria-label="andAgainSoftware, home"><b>and<i>Again</i></b><span>Software</span></a>
+  <h1>Missed the gate. <em>Go again.</em></h1>
+  <p>There's no page at this address. The front page has all seven projects.</p>
+  <div class="btns">
+    <a class="btn" href="./">Back to the front page</a>
+    <a class="btn wh" href="webfpv/">See WebFPV</a>
+  </div>
+</main>
+</body>
+</html>
