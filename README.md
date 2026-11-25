@@ -2,7 +2,7 @@
 
 The publisher site for andAgainSoftware: games, tools and websites by Mat Harvey in Perth, Western Australia.
 
-Live at https://andagainsoftware.com/
+Live at https://andagainapps.com/
 
 | Page | File | What it is |
 | --- | --- | --- |
@@ -44,7 +44,7 @@ Every path is relative, so the site works from its domain, from a github.io addr
 
 ## The domain
 
-The `CNAME` file holds the site's address, `andagainsoftware.com`, and GitHub Pages reads it on every publish. The
+The `CNAME` file holds the site's address, `andagainapps.com`, and GitHub Pages reads it on every publish. The
 domain's DNS is at Cloudflare: the root and `www` each point at `mathew-harvey.github.io`. The old address,
 `mathew-harvey.github.io/andAgainSoftware/`, sends visitors on to the domain. The `og:url` and `og:image` lines in
 the `<head>` of both pages hold the full address, because shared links need one. Change those, and `CNAME`, if the
