@@ -18,7 +18,7 @@
 <link rel="preload" href="assets/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/barlow-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/fonts.css">
-<link rel="stylesheet" href="assets/css/home.css">
+<link rel="stylesheet" href="assets/css/home.css?v=2">
 </head>
 <body>
 <a class="skip" href="#main">Skip to the content</a>
@@ -61,7 +61,7 @@
     <div class="cv-g">
       <div class="pan plate cut-r">
         <div class="pan-c"><div class="pan-m">
-          <div class="chips"><span class="chip y">Issue 01</span><span class="chip"><span class="lg-only">Eight projects from one developer in Perth</span><span class="sm-only">Eight projects, one developer</span></span></div>
+          <p class="lab eb"><span class="lg-only">Eight projects from one developer in Perth</span><span class="sm-only">Eight projects, one developer</span></p>
           <h1>Software for people who <span class="hl">go again.</span></h1>
           <p class="sub">Three games, a tool for teams, a gym's video classes, a colouring app and two websites.</p>
           <div class="btns">
@@ -71,15 +71,15 @@
         </div></div>
       </div>
 
-      <a class="pan cv-wf cut-l" href="#webfpv">
+      <a class="pan cv-wf" href="#webfpv">
         <span class="pan-c"><span class="pan-m">
-          <img class="kb" src="assets/media/wf-cover-town.jpg" alt="">
+          <img src="assets/media/wf-cover-town.jpg" alt="">
         </span>
         <span class="cap"><b>01 WebFPV</b><small>FPV drone simulator, drawn like a manga</small></span>
         <span class="tag y" data-t="cvTag">Free now</span></span>
       </a>
 
-      <a class="pan cv-rpa cut-r cd" href="#rpa">
+      <a class="pan cv-rpa" href="#rpa">
         <span class="pan-c"><span class="pan-m">
           <img src="assets/media/rpa-teal.png" alt="">
         </span>
@@ -87,55 +87,22 @@
         <span class="tag">Coming soon</span></span>
       </a>
 
-      <a class="pan cv-ore cut-l cd" href="#ore">
+      <a class="pan cv-ore" href="#ore">
         <span class="pan-c"><span class="pan-m">
-          <img class="kb" src="assets/media/ore-menu0.jpg" alt="">
+          <img src="assets/media/ore-menu0.jpg" alt="">
         </span>
         <span class="cap"><b>03 Ore Else</b><small>First person strategy</small></span>
         <span class="tag">Coming soon</span></span>
       </a>
-
-      <a class="pan cv-bwg cut-r2 cd" href="#bwg">
-        <span class="pan-c"><span class="pan-m duo">
-          <img src="assets/media/bwg-hl-03.jpg" alt="">
-        </span>
-        <span class="cap"><b>04 The Bodyweight Gym</b><small>Free classes, two books</small></span>
-        <span class="tag y">Out now</span></span>
-      </a>
-
-      <a class="pan cv-app cut-lr2 cd" href="#apphub">
-        <span class="pan-c"><span class="pan-m">
-          <span class="cv-ah"><img src="assets/media/apphub-mark.png" alt=""><b>One person solves it once.</b></span>
-        </span>
-        <span class="cap"><b>05 AppHub</b><small>Your team's small tools</small></span>
-        <span class="tag y">Out now</span></span>
-      </a>
-
-      <a class="pan cv-wcl cut-lr2 cd" href="#webcoloring">
-        <span class="pan-c"><span class="pan-m">
-          <img src="assets/media/wcl-cover.jpg" alt="">
-        </span>
-        <span class="cap"><b>06 WebColoring</b><small>Free colouring pages</small></span>
-        <span class="tag y">Out now</span></span>
-      </a>
-
-      <a class="pan cv-wc cut-lr2 cd" href="#wcmrc">
-        <span class="pan-c"><span class="pan-m flat">
-          <img src="assets/media/wcmrc-quad-cut.png" alt="">
-        </span>
-        <span class="cap"><b>07 West Coast Multirotor Club</b><small>Website for a racing club</small></span>
-        <span class="tag y">Live</span></span>
-        <img class="cv-pop" src="assets/media/wcmrc-quad-cut.png" alt="">
-      </a>
-
-      <a class="pan cv-elf cut-l2 cd" href="#elf">
-        <span class="pan-c"><span class="pan-m">
-          <img class="kb" src="assets/media/elf-d1wa.jpg" alt="" loading="lazy">
-        </span>
-        <span class="cap"><b>08 Extreme Limit Films</b><small>Website for a film crew</small></span>
-        <span class="tag">In progress</span></span>
-      </a>
     </div>
+
+    <ul class="ix">
+      <li><a href="#bwg"><span class="ix-p sk"><img src="assets/media/bwg-hl-03.jpg" alt=""></span><b>04 The Bodyweight Gym</b><small>Free classes, two books</small></a></li>
+      <li><a href="#apphub"><span class="ix-p ah"><img src="assets/media/apphub-grid8.jpg" alt=""></span><b>05 AppHub</b><small>Your team's small tools</small></a></li>
+      <li><a href="#webcoloring"><span class="ix-p"><img src="assets/media/wcl-cover.jpg" alt=""></span><b>06 WebColoring</b><small>Free colouring pages</small></a></li>
+      <li><a href="#wcmrc"><span class="ix-p mono"><img src="assets/media/wcmrc-gates.jpg" alt=""></span><b>07 West Coast Multirotor Club</b><small>Website for a racing club</small></a></li>
+      <li><a href="#elf"><span class="ix-p"><img src="assets/media/elf-d1wa.jpg" alt="" loading="lazy"></span><b>08 Extreme Limit Films</b><small>Website for a film crew</small></a></li>
+    </ul>
   </div>
 </section>
 
@@ -157,7 +124,6 @@
 <section class="sec" aria-labelledby="h-games">
   <div class="w">
     <header class="sh" id="games">
-      <span class="sh-n" aria-hidden="true"><i>01</i><i>02</i><i>03</i></span>
       <h2 id="h-games">Games</h2>
       <p>One out now, two on the way.</p>
     </header>
@@ -169,7 +135,7 @@
         </div>
       </div>
       <div class="wfp-t">
-        <div class="chips"><span class="chip n">01</span><span class="chip y">Cover story</span></div>
+        <p class="kick"><b>01</b><span>Cover story</span></p>
         <h3><img class="wf-lg" src="assets/media/wf-logo.png" alt="WebFPV"></h3>
         <p class="big">A first person view drone simulator, drawn like a manga.</p>
         <p>73&nbsp;lessons take you from a first hover to a five lap championship. WebFPV runs the open source flight controller firmware that racing drones fly on. It's free in your browser now. <span data-t="wfSteamLine">The Steam edition, for Windows, has lower latency and works offline. It comes out on 27&nbsp;November for USD&nbsp;9.99.</span></p>
@@ -180,100 +146,95 @@
       </div>
     </article>
 
-    <article class="rp" id="rpa">
-      <div class="pan rp-l"><span class="pan-c"><span class="pan-m"><img src="assets/media/rpa-site-lead.jpg" alt="Remote Pilot Academy: a drone hovers above a two storey depot, a row of parked cars and a line of shipping containers" loading="lazy"></span>
-        <span class="say up w1">Fly in goggles, on the controller screen or by line of sight.</span></span>
-        <h3 class="rp-n"><span>Remote Pilot</span> <span>Academy</span></h3>
+    <article class="pj" id="rpa">
+      <div class="pj-m">
+        <figure class="pan lead sr"><span class="pan-c"><span class="pan-m rp-l"><img src="assets/media/rpa-site-lead.jpg" alt="Remote Pilot Academy: a drone hovers above a two storey depot, a row of parked cars and a line of shipping containers" loading="lazy"></span>
+          <span class="say">Fly in goggles, on the controller screen or by line of sight.</span></span></figure>
+        <ul class="ths lst">
+          <li><figure class="th"><img src="assets/media/rpa-farm-p.jpg" alt="A small drone flies over a paddock towards a shed, a tractor and two utes" loading="lazy"><figcaption>You start with a borrowed ute and a small drone.</figcaption></figure></li>
+          <li><figure class="th job"><img src="assets/media/rpa-job1.jpg" alt="A job card: clifftop listing stills for a real estate agent, 450 dollars" loading="lazy"><figcaption>Pick a job from the board.</figcaption></figure></li>
+          <li><figure class="th fit"><img src="assets/media/rpa-hangar.png" alt="Two of the game's aircraft: a small teal quad and a yellow wash quad" loading="lazy"><figcaption>Nine aircraft, 249&nbsp;g to 12&nbsp;kg.</figcaption></figure></li>
+        </ul>
       </div>
-      <div class="rp-r">
-        <div class="tpb">
-          <div class="chips"><span class="chip n">02</span><span class="chip k">Coming soon</span></div>
-          <p class="big">A drone career game.</p>
-          <p>Photograph houses, survey farms and inspect towers. Then hire a crew and grow the company. As you play, you learn the real drone rules for Australia, the United States and Canada. It's a game, not a licence.</p>
-          <div class="btns"><a class="btn wh" href="#next">What's next</a></div>
-        </div>
-        <div class="pols">
-          <figure class="pol"><img src="assets/media/rpa-farm-p.jpg" alt="A small drone flies over a paddock towards a shed, a tractor and two utes" loading="lazy"><figcaption>You start with a borrowed ute and a small drone.</figcaption></figure>
-          <figure class="pol wd"><img src="assets/media/rpa-job1.jpg" alt="A job card: clifftop listing stills for a real estate agent, 450 dollars" loading="lazy"><figcaption>Pick a job from the board.</figcaption></figure>
-          <figure class="pol hg"><img src="assets/media/rpa-hangar.png" alt="Two of the game's aircraft: a small teal quad and a yellow wash quad" loading="lazy"><figcaption>Nine aircraft, 249&nbsp;g to 12&nbsp;kg.</figcaption></figure>
-        </div>
+      <div class="pj-t">
+        <p class="kick"><b>02</b><span>Coming soon</span></p>
+        <h3 class="nm">Remote Pilot Academy</h3>
+        <p class="big">A drone career game.</p>
+        <p>Photograph houses, survey farms and inspect towers. Then hire a crew and grow the company. As you play, you learn the real drone rules for Australia, the United States and Canada. It's a game, not a licence.</p>
+        <div class="btns"><a class="btn wh" href="#next">What's next</a></div>
       </div>
     </article>
 
-    <article class="oe" id="ore">
-      <div class="pan tp cut-r oe-n"><div class="pan-c"><div class="pan-m">
-        <div class="chips"><span class="chip n">03</span><span class="chip k">Coming soon</span></div>
-        <h3 class="nm"><span>Ore</span> <span>Else</span></h3>
+    <article class="pj flip" id="ore">
+      <div class="pj-m">
+        <figure class="pan lead sl"><span class="pan-c"><span class="pan-m"><video src="assets/media/ore-loop.mp4" poster="assets/media/ore-loop-poster.jpg" muted loop playsinline preload="none" aria-label="Ore Else footage: a worker with a drill, a base under attack and a first person fight"></video></span></span></figure>
+        <ul class="ths lst">
+          <li><figure class="th lb"><img src="assets/media/ore-linesman.jpg" alt="A title card for a unit called the Linesman: a yellow robot with a rifle. The card reads: paid by the bullet, tips welcome" loading="lazy"><figcaption>Every unit gets a title card the first time you jump in.</figcaption></figure></li>
+          <li><figure class="th"><img src="assets/media/ore-story-c.jpg" alt="A story panel from Ore Else: two miners trade jokes in speech bubbles" loading="lazy"><figcaption>A campaign in comic panels.</figcaption></figure></li>
+          <li><figure class="th"><img src="assets/media/ore-collapse.jpg" alt="A tower breaking apart in Ore Else" loading="lazy"><figcaption>All 339 pieces of scenery break.</figcaption></figure></li>
+        </ul>
+      </div>
+      <div class="pj-t">
+        <p class="kick"><b>03</b><span>Coming soon</span></p>
+        <h3 class="nm">Ore Else</h3>
         <p class="big">A first person strategy game.</p>
         <p>Your first unit is a worker with a drill. Build a base and an army, then jump into any unit you own.</p>
         <div class="btns"><a class="btn wh" href="#next">What's next</a></div>
-      </div></div></div>
-      <div class="oe-m">
-        <div class="pan oe-l"><span class="pan-c"><span class="pan-m"><img src="assets/media/ore-linesman.jpg" alt="A title card for a unit called the Linesman: a yellow robot with a rifle. The card reads: paid by the bullet, tips welcome" loading="lazy"></span>
-          <span class="say br w2">Every unit gets a title card the first time you jump in.</span></span></div>
-        <div class="pan oe-v"><span class="pan-c"><span class="pan-m"><video src="assets/media/ore-loop.mp4" poster="assets/media/ore-loop-poster.jpg" muted loop playsinline preload="none" aria-label="Ore Else footage: a worker with a drill, a base under attack and a first person fight"></video></span></span></div>
-        <div class="oe-x">
-          <figure class="pol oe-p"><img src="assets/media/ore-story-c.jpg" alt="A story panel from Ore Else: two miners trade jokes in speech bubbles" loading="lazy"><figcaption>A campaign in comic panels.</figcaption></figure>
-          <p class="oe-k">All 339 pieces of scenery break.</p>
-        </div>
       </div>
     </article>
   </div>
 </section>
 
-<section class="sec pk band rv" aria-labelledby="h-tools">
+<section class="sec alt" aria-labelledby="h-tools">
   <div class="w">
     <header class="sh" id="tools">
-      <span class="sh-n" aria-hidden="true"><i>04</i><i>05</i><i>06</i></span>
       <h2 id="h-tools">Apps and training</h2>
       <p>All three out now.</p>
     </header>
 
-    <article class="sp bwg" id="bwg">
-      <figure class="pan sp-a cut-r"><span class="pan-c"><span class="pan-m duo"><img src="assets/media/bwg-rope.jpg" alt="Mat Harvey upside down on a climbing rope, in black and white" loading="lazy"></span><span class="lgo raw"><img src="assets/media/bwg-logo.png" alt="The Bodyweight Gym logo"></span></span></figure>
-      <div class="pan tp sp-b cut-l"><div class="pan-c"><div class="pan-m">
-        <div class="tp-1">
-          <div class="chips"><span class="chip n">04</span><span class="chip k">Out now</span></div>
-          <h3 class="nm">The&nbsp;Bodyweight&nbsp;Gym</h3>
-          <p class="big">Learn the handstand. Then the ring muscle up.</p>
-          <p>57 full length video classes from the gym in Perth, all free to watch. My two books each teach one skill over six&nbsp;levels.</p>
-          <div class="btns"><a class="btn" href="https://thebodyweightgym.org/" target="_blank" rel="noopener">Watch the classes</a></div>
-        </div>
-        <div class="tp-2">
-          <span class="books">
-            <img src="assets/media/bwg-book-hs.jpg" alt="Book cover: The Handstand, by Mat Harvey" loading="lazy">
-            <img src="assets/media/bwg-book-mu.jpg" alt="Book cover: The Ring Muscle Up, by Mat Harvey" loading="lazy">
-          </span>
-        </div>
-      </div></div></div>
-      <div class="sk4 sp-c">
-          <figure class="sk"><img src="assets/media/bwg-hl-01.jpg" alt="Pencil sketch: hands on the floor, ready to kick up" loading="lazy"><figcaption>Hands down.</figcaption></figure>
-          <figure class="sk"><img src="assets/media/bwg-hl-03.jpg" alt="Pencil sketch: one leg kicks up" loading="lazy"><figcaption>Kick.</figcaption></figure>
-          <figure class="sk"><img src="assets/media/bwg-hl-02.jpg" alt="Pencil sketch: nearly vertical, legs split" loading="lazy"><figcaption>And again.</figcaption></figure>
-          <figure class="sk"><img src="assets/media/bwg-hl-04.jpg" alt="Pencil sketch: a straight handstand" loading="lazy"><figcaption>Hold.</figcaption></figure>
+    <article class="pj" id="bwg">
+      <div class="pj-m">
+        <figure class="pan lead sr bw-l"><span class="pan-c"><span class="pan-m duo"><img src="assets/media/bwg-rope.jpg" alt="Mat Harvey upside down on a climbing rope, in black and white" loading="lazy"></span><span class="lgo raw"><img src="assets/media/bwg-logo.png" alt="The Bodyweight Gym logo"></span></span></figure>
+        <ul class="ths n4">
+          <li><figure class="th sq"><img src="assets/media/bwg-hl-01.jpg" alt="Pencil sketch: hands on the floor, ready to kick up" loading="lazy"><figcaption>Hands down.</figcaption></figure></li>
+          <li><figure class="th sq"><img src="assets/media/bwg-hl-03.jpg" alt="Pencil sketch: one leg kicks up" loading="lazy"><figcaption>Kick.</figcaption></figure></li>
+          <li><figure class="th sq"><img src="assets/media/bwg-hl-02.jpg" alt="Pencil sketch: nearly vertical, legs split" loading="lazy"><figcaption>And again.</figcaption></figure></li>
+          <li><figure class="th sq"><img src="assets/media/bwg-hl-04.jpg" alt="Pencil sketch: a straight handstand" loading="lazy"><figcaption>Hold.</figcaption></figure></li>
+        </ul>
+      </div>
+      <div class="pj-t">
+        <p class="kick"><b>04</b><span>Out now</span></p>
+        <h3 class="nm">The Bodyweight Gym</h3>
+        <p class="big">Learn the handstand. Then the ring muscle up.</p>
+        <p>57 full length video classes from the gym in Perth, all free to watch. My two books each teach one skill over six&nbsp;levels.</p>
+        <div class="btns"><a class="btn" href="https://thebodyweightgym.org/" target="_blank" rel="noopener">Watch the classes</a></div>
+        <span class="books">
+          <img src="assets/media/bwg-book-hs.jpg" alt="Book cover: The Handstand, by Mat Harvey" loading="lazy">
+          <img src="assets/media/bwg-book-mu.jpg" alt="Book cover: The Ring Muscle Up, by Mat Harvey" loading="lazy">
+        </span>
       </div>
     </article>
 
-    <article class="ah2" id="apphub">
-      <div class="ah2-t">
-        <div class="chips"><span class="chip n">05</span><span class="chip k">Out now</span></div>
+    <article class="pj flip" id="apphub">
+      <div class="pj-m">
+        <div class="brw">
+          <div class="brw-bar" aria-hidden="true"><i></i><i></i><i></i><span>app.my-app-hub.com</span></div>
+          <div class="brw-v"><img src="assets/media/apphub-grid8.jpg" alt="Eight AppHub demo apps, among them Team Notes, Pomodoro Timer, Calculator, Unit Converter and Whiteboard" loading="lazy"></div>
+        </div>
+        <p class="cpt">One person solves it once. Everyone gets it forever.</p>
+      </div>
+      <div class="pj-t">
+        <p class="kick"><b>05</b><span>Out now</span></p>
         <div class="nmrow"><span class="logo-w"><img src="assets/media/apphub-mark.png" alt=""></span><h3 class="nm">AppHub</h3></div>
         <p class="big">One place for your team's small tools.</p>
         <p>People build small apps with AI: a timer, a calculator, a notes page. Then they get lost in email attachments. Upload one and your team can run it. AppHub keeps every version and the prompt that made it.</p>
         <div class="btns"><a class="btn" href="https://my-app-hub.com/" target="_blank" rel="noopener">Visit AppHub</a></div>
       </div>
-      <div class="ah2-a">
-        <p class="brw-n"><span>One person solves it once.</span> <span>Everyone gets it forever.</span></p>
-        <div class="brw">
-          <div class="brw-bar" aria-hidden="true"><i></i><i></i><i></i><span>app.my-app-hub.com</span></div>
-          <div class="brw-v"><img src="assets/media/apphub-grid8.jpg" alt="Eight AppHub demo apps, among them Team Notes, Pomodoro Timer, Calculator, Unit Converter and Whiteboard" loading="lazy"></div>
-        </div>
-      </div>
     </article>
 
-    <article class="wcl" id="webcoloring">
-      <div class="wcl-a">
-        <figure class="pan wcl-pg cut-r"><span class="pan-c"><span class="pan-m">
+    <article class="pj" id="webcoloring">
+      <div class="pj-m">
+        <figure class="pan lead sr wcl-pg"><span class="pan-c"><span class="pan-m">
           <span class="wcl-st" role="img" aria-label="A colouring page: a kangaroo with a joey in her pouch, filled in one colour at a time">
             <img class="ln" src="assets/media/wcl-line.png" alt="" width="1280" height="960" loading="lazy">
             <img class="f f1 on" src="assets/media/wcl-c01.png" alt="" width="1280" height="960" loading="lazy">
@@ -290,12 +251,12 @@
           </span></span></span>
         </figure>
         <div class="wcl-key">
-          <p>A page from Aussie Bush Buddies, coloured by numbers.</p>
-          <ul class="wcl-pal" aria-hidden="true"><li class="d1" style="--c:#7cc8f8">1</li><li class="d2" style="--c:#7ccf5e">2</li><li class="d3" style="--c:#2f9e5a">3</li><li class="d4" style="--c:#ffd83d">4</li><li class="d5" style="--c:#ff9a3c">5</li><li class="d6" style="--c:#ef5a52">6</li><li style="--c:#ff8fc8">7</li><li class="d7" style="--c:#a57de0">8</li><li class="d8" style="--c:#a8714a">9</li><li class="d9" style="--c:#f3cf98">10</li><li class="d10" style="--c:#a9b2bd">11</li><li class="d11" style="--c:#3e7fe0">12</li></ul>
+          <p class="cpt">A page from Aussie Bush Buddies, coloured by numbers.</p>
+          <ul class="wcl-pal" aria-hidden="true"><li style="--c:#7cc8f8">1</li><li style="--c:#7ccf5e">2</li><li style="--c:#2f9e5a">3</li><li style="--c:#ffd83d">4</li><li style="--c:#ff9a3c">5</li><li style="--c:#ef5a52">6</li><li style="--c:#ff8fc8">7</li><li style="--c:#a57de0">8</li><li style="--c:#a8714a">9</li><li style="--c:#f3cf98">10</li><li style="--c:#a9b2bd">11</li><li style="--c:#3e7fe0">12</li></ul>
         </div>
       </div>
-      <div class="wcl-t">
-        <div class="chips"><span class="chip n">06</span><span class="chip k">Out now</span></div>
+      <div class="pj-t">
+        <p class="kick"><b>06</b><span>Out now</span></p>
         <h3 class="nm">WebColoring</h3>
         <p class="big">Free colouring pages for kids and grown-ups.</p>
         <p>Nine books hold 270&nbsp;pictures of dragons, block towns, mandalas and machines. Tap to fill, paint by hand or colour by numbers, on a phone, tablet or computer. It has no ads and no accounts, and it works offline.</p>
@@ -330,63 +291,59 @@
 <section class="sec" aria-labelledby="h-sites">
   <div class="w">
     <header class="sh" id="sites">
-      <span class="sh-n" aria-hidden="true"><i>07</i><i>08</i></span>
       <h2 id="h-sites">Websites</h2>
       <p>One live, one in progress.</p>
     </header>
     <div class="ws">
       <article class="ws-c" id="wcmrc">
-        <div class="pan ws-ph cut-r"><span class="pan-c"><span class="pan-m duo"><img src="assets/media/wcmrc-gates.jpg" alt="Race gates and flags set up on the club's field" loading="lazy"></span>
-          <span class="lgo"><img src="assets/media/wcmrc-logo.png" alt=""></span></span>
-          <img class="ws-q" src="assets/media/wcmrc-quad-cut.png" alt="" loading="lazy">
-        </div>
-        <div class="chips"><span class="chip n">07</span><span class="chip k">Live</span></div>
+        <figure class="pan lead sr"><span class="pan-c"><span class="pan-m duo"><img src="assets/media/wcmrc-gates.jpg" alt="Race gates and flags set up on the club's field" loading="lazy"></span>
+          <span class="lgo"><img src="assets/media/wcmrc-logo.png" alt=""></span></span></figure>
+        <p class="kick"><b>07</b><span>Live</span></p>
         <h3 class="nm">West Coast Multirotor Club</h3>
         <p>An FPV racing club in Perth, running since 2016. I built its website, with race days, galleries, tech guides and the handbook.</p>
         <div class="btns"><a class="btn" href="https://westcoastmultirotors.com.au/" target="_blank" rel="noopener">Visit the club's website</a></div>
       </article>
 
-      <article class="ws-e" id="elf">
-        <div class="pan ws-lb cut-l"><span class="pan-c"><span class="pan-m"><video src="assets/media/elf-coast.mp4" poster="assets/media/elf-coast-poster.jpg" muted loop playsinline preload="none" aria-label="Drone film by Extreme Limit Films: cliffs and surf on the Western Australian coast"></video></span>
-          <span class="lgo dk"><img src="assets/media/elf-logo.png" alt=""></span></span></div>
-        <div class="reel">
-          <img src="assets/media/elf-hero-drift.jpg" alt="Two drift cars sideways on a circuit, filmed from a drone" loading="lazy">
-          <img src="assets/media/elf-skidfest.jpg" alt="A yellow car in a cloud of burnout smoke, filmed from a drone" loading="lazy">
-          <img src="assets/media/elf-kraken.jpg" alt="A jet sprint boat in a tight channel" loading="lazy">
-        </div>
-        <div class="ws-et">
-          <div>
-            <div class="chips"><span class="chip n">08</span><span class="chip k">In progress</span></div>
-            <h3 class="nm">Extreme Limit Films</h3>
-          </div>
-          <p>An FPV drone film crew from Perth. They film motorsport and the Western Australian coast, and they broadcast events live. I'm building their new website.</p>
-        </div>
+      <article class="ws-c" id="elf">
+        <figure class="pan lead sl"><span class="pan-c"><span class="pan-m"><video src="assets/media/elf-coast.mp4" poster="assets/media/elf-coast-poster.jpg" muted loop playsinline preload="none" aria-label="Drone film by Extreme Limit Films: cliffs and surf on the Western Australian coast"></video></span>
+          <span class="lgo dk"><img src="assets/media/elf-logo.png" alt=""></span></span></figure>
+        <p class="kick"><b>08</b><span>In progress</span></p>
+        <h3 class="nm">Extreme Limit Films</h3>
+        <p>An FPV drone film crew from Perth. They film motorsport and the Western Australian coast, and they broadcast events live. I'm building their new website.</p>
+        <ul class="ths reel">
+          <li><figure class="th"><img src="assets/media/elf-hero-drift.jpg" alt="Two drift cars sideways on a circuit, filmed from a drone" loading="lazy"></figure></li>
+          <li><figure class="th"><img src="assets/media/elf-skidfest.jpg" alt="A yellow car in a cloud of burnout smoke, filmed from a drone" loading="lazy"></figure></li>
+          <li><figure class="th"><img src="assets/media/elf-kraken.jpg" alt="A jet sprint boat in a tight channel" loading="lazy"></figure></li>
+        </ul>
       </article>
     </div>
   </div>
 </section>
 
-<section class="lt" aria-labelledby="h-about">
-  <div class="w lt-g" id="about" style="scroll-margin-top: 100px">
-    <div class="box letter">
+<section class="sec alt ab" aria-labelledby="h-about">
+  <div class="w ab-g" id="about">
+    <div class="ab-t">
       <span class="lab">About</span>
       <h2 id="h-about">Who makes this?</h2>
-      <div class="letter-t">
-        <p>andAgainSoftware is me, Mat Harvey, in Perth, Western Australia. I make the games and tools I wanted for myself, and websites for a club and a client.</p>
-        <p>WebFPV is the simulator I wanted to learn on. AppHub is where my own small tools live now.</p>
-        <span class="sig">Mat</span>
-      </div>
-      <figure class="snap"><span class="duo pp"><img src="assets/media/bwg-mat.jpg" alt="Mat Harvey holding a handstand against a brick wall" loading="lazy"></span><figcaption>Mat, the right way up.</figcaption></figure>
+      <p>andAgainSoftware is me, Mat Harvey, in Perth, Western Australia. I make the games and tools I wanted for myself, and websites for a club and a client.</p>
+      <p>WebFPV is the simulator I wanted to learn on. AppHub is where my own small tools live now.</p>
+      <span class="sig">Mat</span>
     </div>
-    <aside class="coupon" id="next" aria-labelledby="h-next">
-      <svg class="sc" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="#111318" stroke-width="2.2" stroke-linecap="round"><circle cx="6" cy="7" r="3"></circle><circle cx="6" cy="17" r="3"></circle><path d="M8.6 8.6 21 18M8.6 15.4 21 6"></path></g></svg>
-      <span class="lab">Cut here</span>
+    <figure class="snap"><span class="duo"><img src="assets/media/bwg-mat.jpg" alt="Mat Harvey holding a handstand against a brick wall" loading="lazy"></span><figcaption>Mat, the right way up.</figcaption></figure>
+  </div>
+</section>
+
+<section class="nxb" id="next" aria-labelledby="h-next">
+  <div class="w nxb-g">
+    <div class="nxb-t">
       <h2 id="h-next">What's next</h2>
       <p data-t="nextUp">WebFPV lands on Steam on 27&nbsp;November, for USD&nbsp;9.99.</p>
-      <a class="btn" href="https://store.steampowered.com/app/4944190/webFPV/" target="_blank" rel="noopener" data-t="steamLabel">Wishlist on Steam</a>
-      <a class="btn wh" href="https://www.youtube.com/@andAgainFPV" target="_blank" rel="noopener">Follow on YouTube</a>
       <p class="nx lab">Remote Pilot Academy and Ore Else have no dates&nbsp;yet.</p>
-    </aside>
+    </div>
+    <div class="btns">
+      <a class="btn bk" href="https://store.steampowered.com/app/4944190/webFPV/" target="_blank" rel="noopener" data-t="steamLabel">Wishlist on Steam</a>
+      <a class="btn wh" href="https://www.youtube.com/@andAgainFPV" target="_blank" rel="noopener">Follow on YouTube</a>
+    </div>
   </div>
 </section>
 </main>
