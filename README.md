@@ -13,8 +13,17 @@ Live at https://mathew-harvey.github.io/andAgainSoftware/
 ## How it is built
 
 Plain HTML, CSS and JavaScript. There is no build step, no framework and no package to install. To change the site,
-edit the files and push to `main`. GitHub Pages publishes the root of `main`, and `.nojekyll` tells it to serve the
-files as they are.
+edit the files and push. `.nojekyll` tells GitHub Pages to serve the files as they are.
+
+GitHub Pages publishes the `gh-pages` branch, which is kept at the same commit as `main`. After a change, push both:
+
+```
+git push origin main
+git push origin main:gh-pages
+```
+
+To publish straight from `main` instead, open the repository's Settings, then Pages, choose "Deploy from a branch"
+with `main` and `/ (root)`, and delete the `gh-pages` branch.
 
 ```
 index.html              home
