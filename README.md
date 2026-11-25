@@ -2,7 +2,7 @@
 
 The publisher site for andAgainSoftware: games, tools and websites by Mat Harvey in Perth, Western Australia.
 
-Live at https://mathew-harvey.github.io/andAgainSoftware/
+Live at https://andagainsoftware.com/
 
 | Page | File | What it is |
 | --- | --- | --- |
@@ -40,7 +40,15 @@ assets/media/           pictures and video
 assets/og-*.jpg         the pictures shown when a page is shared
 ```
 
-Every path is relative, so the site works from this address, from a domain of its own, or from a folder on a disk.
+Every path is relative, so the site works from its domain, from a github.io address, or from a folder on a disk.
+
+## The domain
+
+The `CNAME` file holds the site's address, `andagainsoftware.com`, and GitHub Pages reads it on every publish. The
+domain's DNS is at Cloudflare: the root and `www` each point at `mathew-harvey.github.io`. The old address,
+`mathew-harvey.github.io/andAgainSoftware/`, sends visitors on to the domain. The `og:url` and `og:image` lines in
+the `<head>` of both pages hold the full address, because shared links need one. Change those, and `CNAME`, if the
+site ever moves.
 
 ## Preview it on your own computer
 
@@ -91,8 +99,6 @@ New clips should be H.264 MP4 with a poster picture, and written like the existi
 
 ## Things to change later
 
-- **A domain of its own.** The `og:url` and `og:image` lines in the `<head>` of both pages hold the full github.io
-  address, because shared links need a full address. Change them when the site moves.
 - **A mailing list.** The "What's next" card on the home page stands where a sign up form will go once there is a
   mailing list tool to send it to.
 - **Contact.** There is no contact address on the site yet.
