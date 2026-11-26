@@ -82,9 +82,11 @@ They say "on Steam on 27 November", so update them after launch.
 
 ## Motion and video
 
-The short clips are silent loops. They play only while they are on screen, and the "Pause motion" button in the top
-bar stops all of them and remembers the choice. Motion starts paused for anyone whose system asks for reduced motion
-or reduced data. The WebFPV trailer loads nothing until someone presses play, then plays with sound and controls.
+The short clips are silent loops. They play only while they are on screen, and the "Pause motion" button stops all
+of them and remembers the choice. On the home page that button is in the top strip and again at the foot of the
+page, because a phone does not show the top strip. Motion starts paused for anyone whose system asks for reduced
+motion or reduced data. The WebFPV trailer loads nothing until someone presses play, then plays with sound and
+controls.
 
 The colouring page in the WebColoring block is not a video. It is the page's line art (`wcl-line.png`) with one
 picture for each colour (`wcl-c01.png` to `wcl-c12.png`) multiplied onto it, and `home.css` fades them in one after
@@ -96,6 +98,27 @@ New clips should be H.264 MP4 with a poster picture, and written like the existi
 ```html
 <video src="assets/media/name.mp4" poster="assets/media/name-poster.jpg" muted loop playsinline preload="none"></video>
 ```
+
+## Keeping the home page calm
+
+The home page is laid out to pass the blur test. Blur any screen, and one headline or picture and one button should
+still stand out. The rules are written at the top of `assets/css/home.css`:
+
+- A block has one yellow button. Its second choice is an underlined link (`class="tl"`), never a second button.
+- A block has one lead picture. On a phone it shows nothing else beside its words and its button.
+- The cover is printed in ink alone, so colour starts with the first project.
+
+The cover has three pictures, and each one shows a failure from a different project, which is where the name comes
+from. The gate and the base are grey copies of game screenshots, cropped and lightened so the sky prints as paper
+(`cv-gate.jpg` from `wf-s17-hd.jpg`, and `cv-base.jpg` from `ore-collapse.jpg`). The muscle up is the gym's pencil
+sketch. The page multiplies the grey copies onto the paper colour, so a new one should be greyscale with a light
+background.
+
+Under the WebColoring block, the nine book covers are printed in ink too, and a cover shows its colours when someone
+points at it. A phone leaves them out.
+
+On a phone the navigation is the "All eight" menu in the top bar. It is a `<details>` element, so it opens with
+JavaScript off. The script closes it after a choice, on Escape and on a tap outside it.
 
 ## Things to change later
 

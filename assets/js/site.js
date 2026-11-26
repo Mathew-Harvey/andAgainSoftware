@@ -129,6 +129,25 @@
     }
   });
 
+  /* The home page's phone menu is a details element, so it opens with the script off.
+   * With it on, the menu also closes after a choice, on Escape and on a tap outside it. */
+  var menu = root.querySelector('[data-menu]');
+  if (menu) {
+    menu.addEventListener('click', function (e) {
+      if (e.target.closest && e.target.closest('a')) menu.open = false;
+    });
+    document.addEventListener('click', function (e) {
+      if (menu.open && !menu.contains(e.target)) menu.open = false;
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && menu.open) {
+        menu.open = false;
+        var s = menu.querySelector('summary');
+        if (s) s.focus();
+      }
+    });
+  }
+
   tick();
   motion();
   setInterval(tick, 30000);
